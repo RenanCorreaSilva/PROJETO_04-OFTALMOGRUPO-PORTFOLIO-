@@ -1,0 +1,659 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/**Estilo para o plugin slick**/
+
+
+
+.slick-dotted ul{
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.slick-dotted li{
+    display: inline-block;
+    margin:0 7px;
+}
+
+.slick-dotted button:focus{
+    outline: 0;
+}
+
+.slick-dotted li button{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background: #d8d8d8;
+    opacity: 1;
+    cursor: pointer;
+}
+
+li.slick-active button{
+    background: #688293;
+    color: #688293;
+}
+
+.slick-slide:focus{outline: none;}
+
+
+
+
+/**Fim do estilo para o plugin**/
+
+.clear{
+    clear: both;
+}
+
+.container{
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+html,body{
+    height: 100%;
+}
+
+/**Header do site **/
+
+header{
+    padding: 20px 2%;
+}
+
+header .logo img{
+    float: left;
+    width: 350px;
+}
+
+nav.menu-mobile{
+    display: none;
+    float: right;
+    width: 28px;
+    height: 28px;
+    margin-top: 7px;
+    cursor: pointer;
+    display: none;
+    background-image: url('../IMAGENS/menu-mobile.png');
+    background-size: 100% 100%;
+}
+
+nav.menu-mobile ul{
+    display: none;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+
+
+nav.menu-mobile ul li{
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+header nav.menu-desktop{
+    float: right;
+}
+
+header nav.menu-desktop ul{
+    padding: 8px 0;
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    float: left;
+    font-size: 14px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+header ul a{
+    text-decoration: none;
+    color: rgb(41, 116, 177);
+}
+
+/****/
+
+/** MOSAICO **/
+
+.mosaico .container{
+    width: 80%;
+    max-width: none;
+}
+
+.single{
+    float: left;
+    width: 100%;
+    height: 700px;
+}
+
+.single{
+    position: relative;
+    background-color: #ccc;
+    width: 100%;
+}
+
+.single img{
+    display: none;
+    width: 100%;
+    position:absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*****/
+
+/** SERVICOS **/
+
+section.servicos > .container{
+    max-width: 800px;
+    display:flex;
+    align-items: center;
+    position: relative;
+    top: -30px;
+    text-align: center;
+}
+
+section.servicos  > .container .box-servico {
+    background-image: url('../IMAGENS/eye_icon.png');
+    background-size: 25px;
+    background-position: center calc(100% - 2px);
+    background-repeat: no-repeat;
+}
+
+section.servicos  > .container .box-servico h2{
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+section.servicos  > .container .box-servico p{
+    color: white;
+    margin-top: 8px;
+    font-weight: normal;
+    font-size: 13px;
+}    
+
+section.servicos  > .container .box-servico:nth-of-type(1){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+}
+
+
+section.servicos  > .container .box-servico:nth-of-type(2){
+    width: 40%;
+    padding: 60px 2%;
+    background-color: #688293;
+    background-image: none;
+}
+
+section.servicos  > .container .box-servico:nth-of-type(3){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+}
+
+/***********/
+
+/**PERFIL**/
+
+
+section.perfil{
+    padding: 40px 2%;
+}
+
+section.perfil .perfil-wraper{
+    padding-top: 60%;
+    position: relative;
+}
+
+section.perfil .container{
+    max-width: 1000px;
+}
+
+section.perfil .perfil-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.perfil .img-perfil{
+    width: 40%;
+    height: 90%;
+    background-image: url('../IMAGENS/perfil.PNG');
+    background-size: 100% 100%;
+    box-shadow:1px 3px 6px 4px rgba(107,107,107,0.57);
+}
+
+section.perfil .texto-perfil{
+    width: 60%;
+    padding: 0 30px;
+}
+
+section.perfil .texto-perfil h2{
+    color: #698293;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+section.perfil .texto-perfil p{
+    color: #b4b4b4;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/*********/
+
+
+/**EXAMES**/
+
+section.exames, section.cirurgias{
+    margin: 0 auto;
+    padding:70px 0;
+    background-color: #e6e4e1;
+    border: 5px solid white;
+    max-width: 1400px;
+}
+
+section.exames > h2, section.cirurgias > h2{
+    text-align: center;
+    color: rgb(41, 116, 177);
+}
+
+section.exames .exames-container, section.cirurgias .cirurgias-container{
+    float: left;
+    width: 33.3%;
+    height: 450px;
+}
+
+section.exames > .container, section.cirurgias > .container{
+    padding: 50px 2%;
+}
+
+.exames-single, .cirurgia-single{
+    padding: 20px;
+    margin: 10px 10px 0 10px;
+    background-color: white;
+    box-shadow:1px 3px 6px 4px rgba(107,107,107,0.57);
+
+}
+
+.exames-single h2, .cirurgia-single h2{
+    font-size: 18px;
+    color: #737373;
+    text-align: center;
+}
+
+.exames-single  p, .cirurgia-single  p{
+    padding: 10px 0;
+    font-size: 13px;
+    color: #b4b4b4;
+}
+
+
+/**************/
+
+
+
+/***DEPOIMENTOS**/
+
+section.depoimentos{
+    padding: 50px 0;
+}
+
+section.depoimentos > h2{
+    text-align: center;
+    color: rgb(41, 116, 177);
+}
+
+section.depoimentos > .container{
+    padding: 50px 0;
+    max-width: 400px;
+}
+
+section.depoimentos .depoimento-single{
+    text-align: center;
+    width: 100%;
+    padding: 0 2%;
+}
+
+.depoimento-single quote{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+.depoimento-single .nome-depoimento{
+    padding: 19px 0;
+}
+
+.nome-depoimento img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.nome-depoimento span{
+    position: relative;
+    top: 4px;
+    font-size: 13px;
+    color: #b4b4b4;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/**************/
+
+/***CONVENIOS****/
+
+section.convenios{
+    padding: 70px 0;  
+    width: 100%;
+    text-align: center;
+}
+
+section.convenios h2{
+    color: rgb(41, 116, 177);
+    text-align: center;
+}
+
+section .img-convenios{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+section .img-wraper {
+    padding: 40px;
+    display: inline-block;
+}
+
+section .img-wraper img{
+    width: 170px;
+    display: inline-block;
+}
+
+/*******************/
+
+
+/***SOCIAL***/
+
+.instagram-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background: #e6e4e1;
+}
+
+.instagram-chamada img{
+    width: 40px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.mosaico-social{
+    float: left;
+    width: 100%;
+}
+
+.img-mosaico-single-social{
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: blue;
+    border: 6px solid white;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+/************/
+
+/****CONTATO****/
+
+section.contato{
+    padding: 60px 2%;
+}
+
+section.contato > h2{
+    text-align: center;
+    color: rgb(41, 116, 177);
+}
+
+section.contato form{
+    margin: 30px auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-wraper{
+    float: left;
+    margin-top: 10px;
+    padding: 0 10px ;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.form-wraper span{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+.form-wraper input[type=text]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    margin-top: 8px;
+    outline: none;
+}
+
+.form-wraper textarea{
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px;
+    height: 121px;
+    resize: none;
+    outline: none;
+    border: 1px solid #dadada;
+}
+
+.form-wraper input[type=submit]{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    border: 0;
+    background: #688293;
+    color: white;
+    cursor: pointer;
+}
+
+/*************/
+
+
+/***FOOTER***/
+
+footer{
+   padding: 40px 2%;
+   background-color: #688293; 
+}
+
+footer .container{
+    max-width: 1000PX;
+    text-align: center;
+
+}
+
+footer .footer-block{
+    float: left;
+    width: 33.3%;
+}
+
+.footer-block h2{
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.footer-block p {
+    font-size: 14px;
+    color: white;
+    margin-top: 8px;
+}
+
+
+/***********/
+
+@media screen and (max-width: 1024px){
+    .img-mosaico-single-social{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    .mosaico-social > div:nth-of-type(1n+7){
+        display: none;
+    }
+    
+}
+
+@media screen and  (max-width: 768px){
+
+    nav.menu-desktop{
+        display: none;
+    }
+
+    nav.menu-mobile{
+        display: block;
+    }
+
+    section.servicos > .container{
+        flex-direction: column;
+    }
+
+    section.servicos  > .container .box-servico:nth-of-type(1){
+       width: 90%;
+       max-width: 350px;
+       padding: 30px 2%;
+    }
+    
+    
+    section.servicos  > .container .box-servico:nth-of-type(2){
+       width: 94%;
+       max-width: 380px;
+       padding: 30px 2%;
+    }
+    
+    section.servicos  > .container .box-servico:nth-of-type(3){
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+    }
+
+    section.perfil .img-perfil{
+        width: 70%;
+        padding-top: 70%;
+        height: auto;
+        display: inline-block;
+    }
+    
+    section.perfil .texto-perfil{
+        padding: 20px 0;
+        display: inline-block;
+        width: 100%;
+        text-align: justify;
+    }
+
+    section.perfil .perfil-wraper{
+        padding-top: 0;
+    }
+
+    section.perfil .perfil-wraper2{
+        display: inline-block;
+        text-align: center;
+        height: auto;
+        position: static;
+    }
+
+    section.videos{
+        text-align: center;
+    }
+    
+    section.videos .box-video{
+        float: none;
+        width: 70%;
+        display: inline-block;
+        padding-top: calc(70% * 0.6);
+    }
+
+    section.convenios li{
+        width: 250px;
+        padding-top: 20%;
+    
+    }
+    
+    .img-mosaico-single-social{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+
+    .mosaico-social > div:nth-of-type(1n+4){
+        display: none;
+    }
+    
+    footer{
+        text-align: center;
+    }
+
+    footer .footer-block{
+        float: none;
+        width: 100%;
+        margin: 30px 0 ;
+    }
+}    
+
+@media screen  and (max-width: 580px){
+    section.perfil .img-perfil{
+        width: 80%;
+    }
+
+    section.videos .box-video{
+        width: 100%;
+        padding-top: calc(100% * 0.6);
+    }
+
+    .w50{
+        width: 100%;
+    }
+}
+
+@media screen and(max-width: 480px){
+    header .logo img{
+        width: 200px;
+    }
+
+}
